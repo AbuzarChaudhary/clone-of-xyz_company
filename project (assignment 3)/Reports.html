@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reports</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .content{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin:150px 150px 150px 150px;
+        }
+
+        .top{
+            color:lightslategray;
+            text-align: center;
+        }
+        
+        .middle{
+            border: 1px solid grey;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .first {
+            border: 1px solid white;
+        }
+        .second{
+            border: 1px solid white;
+        }
+        .third{
+            border: 1px solid white;
+        }
+
+        .bottom{
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: center;
+           margin-top: 20px;
+        }
+        .card {
+           border: 1px solid lightgray;
+           width: 200px;
+           padding: 10px;
+           text-align: center;
+           border-radius: 8px;
+         }
+         .card span{
+            background-color: rgb(58, 48, 48);
+            font-weight: bold;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <section class="content">
+     
+        <div class="top">
+            <h4>Reports Dashboard</h4>
+        </div>
+
+        <div class="middle">
+        <div class="first">
+          <h4>Report On:</h4>
+          <input type="radio"> All Positions<br>
+          <input type="radio">Open Positions<br>
+          <input type="radio">Filled Positions<br>
+          <input type="radio">Closedositions<br>
+        </div>
+
+        <div class="second">
+            <h4>Report On:</h4>
+            <label for="companies" style="padding-right: 60px; width: 10px">Company</label>
+            <select name="company" id="Companies" style="width: 150px;">
+            <option value="All Companies">All Companies</option>
+            <option value="devsic">devsic</option>
+            <option value="netsol">netsol</option>
+            <option value="arham soft">arham soft</option>
+            <option value="soft skills">soft skills</option>
+            </select><br>
+
+            <label for="business unit" style="padding-right: 33px; width: 10px;">Business Unit</label>
+            <select name="business" id="business units" style="width: 150px;">
+            <option value="All Business Units">All Business Units</option>
+            <option value="front end">front end</option>
+            <option value="backend">backend</option>
+            <option value="AI engineer">AI engineer</option>
+            <option value="software engineer">software engineer</option>
+            </select><br>
+
+            <label for="Department" style="padding-right: 47px; width: 10px;">Department</label>
+            <select name="Department" id="Department"style="width: 150px;">
+            <option value="All Department">All Department</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Artificial Intelligence">Artificail Intelligence</option>
+            </select><br>
+
+            <label for="Recruiter" style="padding-right: 63px; width: 10px;">Recruiter</label>
+            <select name="Recruiter" id="Recruiter"style="width: 150px;">
+            <option value="All Recruiter">All Recruiter</option>
+            <option value="Man Power">Man Power</option>
+            <option value="Kay kay">kay kay</option>
+            </select><br>
+
+            <label for="Recruiter position" style="padding-right: 7px; width: 10px;">Recruiter Position</label>
+            <select name="Recruiter Position" id="Recruiter position"style="width: 150px;">
+            <option value="Technical">Technical</option>
+            <option value="HR">HR</option>
+            </select><br>
+         
+        </div>
+
+        <div class="third">
+            <h4>Report from:</h4>
+            <input type="date" name="datetime">
+            <h4>Report to:</h4>
+            <input type="date" name="datetime">
+        </div>
+
+</div>
+<div class="bottom">
+    <div class="card">
+        <span>Total Number of Positions</span>
+        <h4>27</h4>
+    </div>
+    <div class="card">
+        <span>Total Number of Candidates</span>
+        <h4>150</h4>
+    </div>
+    <div class="card">
+        <span>Average Number of Candidates per Position</span>
+        <h4>4.92</h4>
+    </div>
+    <div class="card">
+        <span>Total Number of Interviews Conducted</span>
+        <h4>133</h4>
+    </div>
+    <div class="card">
+        <span>Average Number of Interviews per Candidate</span>
+        <h4>3.14</h4>
+    </div>
+    <div class="card">
+        <span>Average Candidate Rating</span>
+        <h4>2.35</h4>
+    </div>
+</div>
+
+    </section>
+</body>
+</html>

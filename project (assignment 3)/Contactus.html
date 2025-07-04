@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+        }
+        .headersegment{
+            background-image: url("images/headerbg.jpg");
+            background-size:cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 5px 150px 5px 130px;
+        }
+        .menu{
+            color:white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0px 15px 0px ;
+        }
+
+        .heading{
+            background-image: url(images/bannerBginner.png);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: left;
+            padding: 10px 0px 15px 130px;
+            color: white;
+        }
+
+        .content{
+            border: 10px solid white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 120px 0px 120px;
+            padding:20px;
+        }
+
+        .tablecontent{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .tablecontent>div{
+            flex:1;
+        }
+        form div{
+            margin-bottom: 15px;
+        }
+         .footersegment{
+            background-image: url("images/headerbg.jpg");
+            background-size:cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bottombar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 150px 5px 130px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="headersegment">
+    <div class="topbar">
+        <span style="color: white; ">Call Now: 00912-5533-93390</span>   
+        <div class="socialaccounts">
+            <img src="images/twIcon.jpg" alt="twitter ">
+            <img src="images/fbIcon.jpg" alt="facebook">
+            <img src="images/gmailIcon.jpg" alt="gmail">
+            <img src="images/linkedInIcon.jpg" alt="linkedin">
+       </div>
+    </div>
+        <div class="menu">
+            <a href="Home.html" style="color: white;">HOME</a>
+            <a href="Services.html" style="color: white;">SERVICES</a>
+            <a href="Reports.html" style="color: white;">REPORTS</a>
+            <a href="Contactus.html" style="color: white;">CONTACT US</a>
+        </div>
+       
+ </header>
+
+    <h2 class="heading">CONTACT US</h2>
+
+    <section class="content">
+    <h2 class="contentheading" style="padding-bottom: 10px;">Get in Touch</h2>
+    <p>
+        To deliver quality and high level content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque perferendis amet, tempore praesentium aut facere maiores provident veniam nihil! contact us as soon as possible.
+    </p><br><br>
+
+    <div class="tablecontent">
+        <div>
+            <strong><p>Please fill this form for quick contact</p></strong><br>
+
+            <form action="backend.php">
+                <div>
+                    <label for="name">FirstName:</label><br>
+                    <input type="text" name="myname" id="name" required style="width:250px; height:25px" >
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" name="my_email" id="email" required style="width:250px; height:25px" >
+                </div>
+
+                <div>
+                    <label for="Telephone">Telephone:</label><br>
+                    <input type="number" name="my_Telephone" id="Telephone" required style="width:250px; height:25px" >
+                </div>
+
+                <div>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" name="my_subject" id="subject" required style="width:250px; height:25px" >
+                </div>
+
+                <div>
+                    <label for="textbox">Your Enquiry:</label><br>
+                    <textarea name="my_textarea" id="textbox" cols="30" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" id="signup" style="background-color: rgb(26, 40, 80); color:white; padding: 6px 16px; border: none; cursor: pointer;">
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <strong><p>ABC & Company</p></strong>
+            <strong><p>IT and Accounting Services</p></strong>
+            <p>UMT Road, UMT, PO BOX 54000</p>
+            <p>Lahore - Pakistan</p>
+            <p>Phone: 00912-5533-93390</p>
+            <p>Fax: 00912-4-3422225</p>
+            <a href="mailto:info@gmail.com">info@gmail.com</a><br>
+            <img src="images/map.jpg" alt="map picture" width="250px" height="250px">
+        </div>
+    </div>
+</section>
+
+<footer class="footersegment">
+    <div class="bottombar">
+       <div>
+        <p style="color: white; ">HOME  | SERVICES  | REPORTS  | CONTACT US</p>
+        <p style="color: white;">@ All Rights Reserved</p> 
+       </div> 
+        <div class="socialaccounts">
+            <img src="images/twIcon.jpg" alt="twitter ">
+            <img src="images/fbIcon.jpg" alt="facebook">
+            <img src="images/gmailIcon.jpg" alt="gmail">
+            <img src="images/linkedInIcon.jpg" alt="linkedin">
+       </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
